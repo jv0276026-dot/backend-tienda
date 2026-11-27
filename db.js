@@ -1,7 +1,7 @@
 const mysql = require("mysql2/promise");
 require("dotenv").config();
 
-const host = process.env.DB_HOST;
+const host = `${process.env.DB_HOST_1}.${process.env.DB_HOST_2}`;
 const user = process.env.DB_USER;
 const password = process.env.DB_PASSWORD;
 const database = process.env.DB_NAME;
